@@ -1,6 +1,6 @@
 {
   "name": "asseloadtracker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A plain manual asset loading tracker",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
