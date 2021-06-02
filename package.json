@@ -1,5 +1,5 @@
 {
-  "name": "asseloadtracker",
+  "name": "assetloadtracker",
   "version": "0.1.1",
   "description": "A plain manual asset loading tracker",
   "scripts": {
