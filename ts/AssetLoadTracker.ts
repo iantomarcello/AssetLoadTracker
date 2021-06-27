@@ -20,11 +20,11 @@ export default class AssetLoadTracker {
     }
   }
 
-  onIncrease(loaded: number, total: number): any {
+  onIncrease(total: number, loaded: number): any {
     // to be overwritten
   }
 
-  onComplete(loaded: number, total: number): any {
+  onComplete(total: number, loaded: number): any {
     // to be overwritten
   }
 }
