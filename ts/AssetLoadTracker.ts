@@ -1,5 +1,7 @@
 /**
  * Tracks assets loaded manually.
+ * @param total The total number of assets to track.
+ * @author Ian Yong (iantomarcello)
  */
 
 export default class AssetLoadTracker {
