@@ -1,1 +1,31 @@
-"use strict";module.exports=class{loaded=0;total;constructor(t){this.total=t}increase(t=1){this.loaded+=t,this.loaded===this.total?this.onComplete(this.total,this.loaded):this.onIncrease(this.total,this.loaded)}onIncrease(t,o){}onComplete(t,o){}};
+'use strict';
+
+/**
+ * Tracks assets loaded manually.
+ * @param total The total number of assets to track.
+ * @author Ian Yong (iantomarcello)
+ */
+class AssetLoadTracker {
+    loaded = 0;
+    total;
+    constructor(total) {
+        this.total = total;
+    }
+    increase(amount = 1) {
+        this.loaded += amount;
+        if (this.loaded === this.total) {
+            this.onComplete(this.total, this.loaded);
+        }
+        else {
+            this.onIncrease(this.total, this.loaded);
+        }
+    }
+    onIncrease(total, loaded) {
+        // to be overwritten
+    }
+    onComplete(total, loaded) {
+        // to be overwritten
+    }
+}
+
+module.exports = AssetLoadTracker;
